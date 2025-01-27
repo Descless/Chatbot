@@ -1,0 +1,227 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: turquoise; /* Başlık arkaplan rengi */
+    padding: 20px 0;
+    width: 100%; /* Tam genişlik */
+    position: fixed; /* Sabit konumlandırma */
+    top: 0; /* Üste sabitler */
+    left: 0; /* Sola sabitler */
+    z-index: 100; /* Diğer elementlerin üstünde yer almasını sağlar */
+    box-sizing: border-box; /* İç ve dış kenar boşluklarını birleştirir */
+  }
+  
+
+z{
+    color : black;
+}
+
+button {
+    background-color: white; /* Butonun arka plan rengini ayarla */
+    border: none; /* Varsayılan kenarlığı kaldır */
+    color: white; /* Metin rengini beyaz olarak ayarla */
+    padding: 10px 20px; /* Biraz dolgu ekle */
+    text-align: center; /* Metni ortala */
+    text-decoration: none; /* Linklerden alt çizgiyi kaldır */
+    display: inline-block; /* Butonları satır içi elementler yap */
+    font-size: 16px; /* Yazı tipi boyutunu ayarla */
+    margin: 4px 2px; /* Biraz boşluk ekle */
+    cursor: pointer; /* Fare imlecini butonun üzerine geldiğinde işaretçiye dönüştür */
+    border-radius: 5px; /* İsteğe bağlı: Butona yuvarlak köşeler ekle */
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    margin-bottom: -50px; 
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none; /* Noktalı listeyi kaldırır */
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block; /* Menü öğelerini yan yana dizer */
+    margin-right: 20px; /* Menü öğeleri arasında boşluk */
+}
+.g .button {
+    position: absolute; /* Pozisyon tipini ayarla */
+    right: 30px;
+    top: 43px;         /* Butonu 10 piksel yukarı taşı */
+    /* Diğer stil özellikleri */
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.g .button:hover {
+    background-color: #669999; /* Fare ile üzerine gelindiğinde rengi değişir */
+}
+
+nav a {
+    color: black; /* Turkuaz renk */
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    font-weight: bold;
+}
+
+.container2 {
+    display: flex; /* Flexbox konteynerini etkinleştirir */
+    justify-content: center; /* İçerikleri yatay olarak ortalar */
+    margin-top: 200px;
+}
+
+.sol-kutu, .sag-kutu {
+    flex: 1; /* Her iki kutuyu da eşit genişlikte yapar */
+    padding: 20px;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+}
+
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#girisMetni, #ciktiMetni {
+    width: 100%;
+    height: 200px;
+    resize: vertical; /* Metin kutularını dikey olarak yeniden boyutlandırma seçeneği */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#duzeltButonu {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Yeşil renk */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#duzeltButonu:hover {
+    background-color: #45a049; /* Daha koyu yeşil renk (fare ile üzerine gelindiğinde) */
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .logo {
+        width: 50px;
+        margin-bottom: 0;
+    }
+
+    nav ul {
+        flex-direction: row; /* Küçük ekranlarda butonları yatay hizalar */
+        flex-wrap: wrap; /* Butonların küçük ekranlarda sarılmasını sağlar */
+    }
+
+    nav li {
+        margin: 5px 10px; /* Butonlar arasında daha az boşluk bırakır */
+    }
+
+    .g .button {
+        padding: 5px 5px;
+        font-size: 14px;
+        margin: 4px 2px;
+    }
+
+    .fotograf-kutulari {
+        flex-direction: column;
+    }
+
+    .fotograf-kutusu {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 2px; /* Altbilgideki metin için iç boşluk */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px 0;
+    }
+
+    .logo {
+        width: 40px;
+        margin-bottom: 0;
+    }
+
+    nav ul {
+        text-align: center;
+        flex-direction: row; /* Daha küçük ekranlarda da yatay hizalama */
+        flex-wrap: wrap; /* Butonların sarılmasını sağlar */
+    }
+
+    nav li {
+        margin: 5px 5px; /* Daha az boşluk bırakır */
+    }
+
+    .g .button {
+        padding: 5px 10px;
+        font-size: 12px;
+        top: 20px;
+    }
+
+    .fotograf-kutulari {
+        flex-direction: column;
+    }
+
+    .fotograf-kutusu {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 2px; /* Altbilgideki metin için iç boşluk */
+    }
+}
