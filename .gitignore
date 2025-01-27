@@ -2,3 +2,9 @@ web-scraper/node_modules/
 src/static/pdf
 
 .env
+
+web-scraper/
+services.pdf
+solutions.pdf
+services2.json
+solutions2.json
